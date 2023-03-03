@@ -35,27 +35,25 @@ Response :
 }
 ```
 
-## Get Product
+## Get Detail Student
 
 Request :
 - Method : GET
-- Endpoint : `/api/products/{id_product}`
-- Header :
-    - Accept: application/json
+- Endpoint : `/api/student/:id`
 
 Response :
 
 ```json 
 {
-    "code" : "number",
-    "status" : "string",
     "data" : {
          "id" : "string, unique",
          "name" : "string",
-         "price" : "long",
-         "quantity" : "integer",
-         "createdAt" : "date",
-         "updatedAt" : "date"
+         "universitas" : "string",
+         "prodi" : "string",
+         "expertise" : "string",
+         "skills" : "string",
+         "deskripsi" : "string",
+         "video" : 
      }
 }
 ```
