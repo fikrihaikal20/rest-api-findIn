@@ -14,7 +14,7 @@ Request :
 }
 ```
 
-## Get Student
+## Get all Student
 
 Request :
 - Method : GET
@@ -58,92 +58,137 @@ Response :
 }
 ```
 
-## Update Product
+## Find Student
 
 Request :
-- Method : PUT
-- Endpoint : `/api/products/{id_product}`
-- Header :
-    - Content-Type: application/json
-    - Accept: application/json
+- Method : POST
+- Endpoint : `/api/student/`
 - Body :
 
 ```json 
 {
-    "name" : "string",
-    "price" : "long",
-    "quantity" : "integer"
+    "data" : {
+         "skills" : "string, unique",
+         "expertise" : "string",
+         "kota" : "string"
+     }
 }
-```
 
 Response :
 
 ```json 
 {
-    "code" : "number",
-    "status" : "string",
     "data" : {
          "id" : "string, unique",
          "name" : "string",
-         "price" : "long",
-         "quantity" : "integer",
-         "createdAt" : "date",
-         "updatedAt" : "date"
+         "universitas" : "string",
+         "expertise" : "string",
+         "skills" : "string"
      }
 }
 ```
 
-## List Product
+## Get all Intern
 
 Request :
 - Method : GET
-- Endpoint : `/api/products`
-- Header :
-    - Accept: application/json
-- Query Param :
-    - size : number,
-    - page : number
+- Endpoint : `/api/intern`
 
 Response :
 
 ```json 
 {
-    "code" : "number",
-    "status" : "string",
-    "data" : [
-        {
-             "id" : "string, unique",
-             "name" : "string",
-             "price" : "long",
-             "quantity" : "integer",
-             "createdAt" : "date",
-             "updatedAt" : "date"
-        },
-        {
-             "id" : "string, unique",
-             "name" : "string",
-             "price" : "long",
-             "quantity" : "integer",
-             "createdAt" : "date",
-             "updatedAt" : "date"
-         }
-    ]
+
+    "data" : {
+         "id" : "string, unique",
+         "posisi" : "string",
+         "perusahaan" : "string",
+         "lokasi" : "string",
+         "tipe" : "part time" | "full time",
+     }
 }
 ```
-
-## Delete Product
+## Get Detail Intern
 
 Request :
-- Method : DELETE
-- Endpoint : `/api/products/{id_product}`
-- Header :
-    - Accept: application/json
+- Method : GET
+- Endpoint : `/api/intern/:id`
 
 Response :
 
 ```json 
 {
-    "code" : "number",
-    "status" : "string"
+    "data" : {
+         "id" : "string, unique",
+         "posisi" : "string",
+         "perusahaan" : "string",
+         "lokasi" : "string",
+         "deskripsi" : "string",
+         "tipe" : "part time" | "full time",
+     }
 }
 ```
+
+## Find Intern
+
+Request :
+- Method : POST
+- Endpoint : `/api/student/`
+- Body :
+
+```json 
+{
+    "data" : {
+         "tipe" : "part time" | "full time",
+         "skills" : "string",
+         "expertise" : "string",
+         "lokasi" : "string"
+     }
+}
+
+Response :
+
+```json 
+{
+    "data" : {
+         "id" : "string, unique",
+         "posisi" : "string",
+         "perusahaan" : "string",
+         "lokasi" : "string",
+         "tipe" : "part time" | "full time",
+     }
+}
+```
+
+## Post Intern
+
+Request :
+- Method : POST
+- Endpoint : `/api/postIntern/`
+- Body :
+
+```json 
+{
+    "data" : {
+         "tipe" : "part time" | "full time",
+         "skills" : "string",
+         "expertise" : "string",
+         "lokasi" : "string"
+     }
+}
+
+Response :
+
+```json 
+{
+    "data" : {
+         "id" : "string, unique",
+         "posisi" : "string",
+         "perusahaan" : "string",
+         "deskripsi" : "string"
+         "lokasi" : "string",
+         "tipe" : "part time" | "full time",
+     }
+}
+```
+
