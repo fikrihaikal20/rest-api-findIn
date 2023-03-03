@@ -1,16 +1,46 @@
 # API Spec
 
-## Authentication
+## SignUp Student
 
 
 Request :
 - Method : POST
-- Endpoint : `/api/signup`
+- Endpoint : `/api/signup/student`
 - Body :
 
 ```json 
 {
+    "data" : {
+         "email" : "string",
+         "passwaord" : "string",
+         "nama" : "string",
+         "no_telp" : "int",
+         "universitas" "string",
+         "prodi" : "string",
+         "nim" : "int",
+         "nik" : "int",
+         "tahun masuk" : "date",
+         "expertise" : "string",
+         "skills" : "string",
+     }
+}
+```
 
+## SignUp perusahaan
+
+
+Request :
+- Method : POST
+- Endpoint : `/api/signup/perusahaan`
+- Body :
+
+```json 
+{
+    "data" : {
+         "email" : "string",
+         "passwaord" : "string",
+         "username" : "string",
+     }
 }
 ```
 
@@ -24,7 +54,6 @@ Response :
 
 ```json 
 {
-
     "data" : {
          "id" : "string, unique",
          "name" : "string",
