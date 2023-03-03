@@ -1,17 +1,151 @@
-<h1 align="center">Hi 👋, I'm Fikri Haikal</h1>
-<h3 align="center">I'm student of information system 💻 '22</h3>
+# API Spec
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=fikrihaikal20" alt="fikrihaikal20" /></a> </p>
+## Authentication
 
-- 🌱 I’m currently learning **Express JS**
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://instagram.com/fikhaiikal" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="fikhaiikal" height="30" width="40" /></a>
-<a href="https://www.hackerrank.com/fikri_haikal20" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="fikri_haikal20" height="30" width="40" /></a>
-</p>
+Request :
+- Method : POST
+- Endpoint : `/api/signup`
+- Body :
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://codeigniter.com" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/codeigniter.svg" alt="codeigniter" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> </p>
+```json 
+{
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=fikrihaikal20&" alt="fikrihaikal20" /></p>
+}
+```
+
+## Get Student
+
+Request :
+- Method : GET
+- Endpoint : `/api/student`
+
+Response :
+
+```json 
+{
+
+    "data" : {
+         "id" : "string, unique",
+         "name" : "string",
+         "universitas" : "string",
+         "expertise" : "string",
+         "skills" : "string"
+     }
+}
+```
+
+## Get Product
+
+Request :
+- Method : GET
+- Endpoint : `/api/products/{id_product}`
+- Header :
+    - Accept: application/json
+
+Response :
+
+```json 
+{
+    "code" : "number",
+    "status" : "string",
+    "data" : {
+         "id" : "string, unique",
+         "name" : "string",
+         "price" : "long",
+         "quantity" : "integer",
+         "createdAt" : "date",
+         "updatedAt" : "date"
+     }
+}
+```
+
+## Update Product
+
+Request :
+- Method : PUT
+- Endpoint : `/api/products/{id_product}`
+- Header :
+    - Content-Type: application/json
+    - Accept: application/json
+- Body :
+
+```json 
+{
+    "name" : "string",
+    "price" : "long",
+    "quantity" : "integer"
+}
+```
+
+Response :
+
+```json 
+{
+    "code" : "number",
+    "status" : "string",
+    "data" : {
+         "id" : "string, unique",
+         "name" : "string",
+         "price" : "long",
+         "quantity" : "integer",
+         "createdAt" : "date",
+         "updatedAt" : "date"
+     }
+}
+```
+
+## List Product
+
+Request :
+- Method : GET
+- Endpoint : `/api/products`
+- Header :
+    - Accept: application/json
+- Query Param :
+    - size : number,
+    - page : number
+
+Response :
+
+```json 
+{
+    "code" : "number",
+    "status" : "string",
+    "data" : [
+        {
+             "id" : "string, unique",
+             "name" : "string",
+             "price" : "long",
+             "quantity" : "integer",
+             "createdAt" : "date",
+             "updatedAt" : "date"
+        },
+        {
+             "id" : "string, unique",
+             "name" : "string",
+             "price" : "long",
+             "quantity" : "integer",
+             "createdAt" : "date",
+             "updatedAt" : "date"
+         }
+    ]
+}
+```
+
+## Delete Product
+
+Request :
+- Method : DELETE
+- Endpoint : `/api/products/{id_product}`
+- Header :
+    - Accept: application/json
+
+Response :
+
+```json 
+{
+    "code" : "number",
+    "status" : "string"
+}
+```
