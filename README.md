@@ -201,10 +201,14 @@ Request :
 ```json 
 {
     "data" : {
+         "id" : "string, unique",
+         "posisi" : "string",
+         "perusahaan" : "string",
+         "lokasi" : "string",
          "tipe" : "part time | full time",
-         "skills" : "string",
-         "expertise" : "string",
-         "lokasi" : "string"
+         "deskripsi" : "string",
+         "tenggat" : "date",
+         "panduan" : " ",
      }
 }
 ```
@@ -213,14 +217,7 @@ Response :
 
 ```json 
 {
-    "data" : {
-         "id" : "string, unique",
-         "posisi" : "string",
-         "perusahaan" : "string",
-         "deskripsi" : "string"
-         "lokasi" : "string",
-         "tipe" : "part time | full time",
-     }
+    "message" : " "
 }
 ```
 
