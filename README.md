@@ -1,4 +1,4 @@
-# API Spec
+# API Spec FindIn
 
 ## SignUp Student
 
