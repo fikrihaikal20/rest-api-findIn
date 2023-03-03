@@ -104,7 +104,7 @@ Response :
          "posisi" : "string",
          "perusahaan" : "string",
          "lokasi" : "string",
-         "tipe" : "part time" | "full time",
+         "tipe" : "part time | full time",
      }
 }
 ```
@@ -124,7 +124,7 @@ Response :
          "perusahaan" : "string",
          "lokasi" : "string",
          "deskripsi" : "string",
-         "tipe" : "part time" | "full time",
+         "tipe" : "part time | full time",
      }
 }
 ```
@@ -139,7 +139,7 @@ Request :
 ```json 
 {
     "data" : {
-         "tipe" : "part time" | "full time",
+         "tipe" : "part time | full time",
          "skills" : "string",
          "expertise" : "string",
          "lokasi" : "string"
@@ -155,7 +155,7 @@ Response :
          "posisi" : "string",
          "perusahaan" : "string",
          "lokasi" : "string",
-         "tipe" : "part time" | "full time",
+         "tipe" : "part time | full time",
      }
 }
 ```
@@ -170,7 +170,7 @@ Request :
 ```json 
 {
     "data" : {
-         "tipe" : "part time" | "full time",
+         "tipe" : "part time | full time",
          "skills" : "string",
          "expertise" : "string",
          "lokasi" : "string"
@@ -187,7 +187,7 @@ Response :
          "perusahaan" : "string",
          "deskripsi" : "string"
          "lokasi" : "string",
-         "tipe" : "part time" | "full time",
+         "tipe" : "part time | full time",
      }
 }
 ```
