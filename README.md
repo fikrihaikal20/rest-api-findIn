@@ -201,7 +201,6 @@ Request :
 ```json 
 {
     "data" : {
-         "id" : "string, unique",
          "posisi" : "string",
          "perusahaan" : "string",
          "lokasi" : "string",
@@ -209,6 +208,30 @@ Request :
          "deskripsi" : "string",
          "tenggat" : "date",
          "panduan" : " ",
+     }
+}
+```
+
+Response :
+
+```json 
+{
+    "message" : " "
+}
+```
+
+## Apply Intern
+
+Request :
+- Method : POST
+- Endpoint : `/api/applyIntern/`
+- Body :
+
+```json 
+{
+    "data" : {
+         "cv" : " ",
+         "resume" : " ",
      }
 }
 ```
