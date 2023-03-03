@@ -15,7 +15,7 @@ Request :
          "passwaord" : "string",
          "nama" : "string",
          "no_telp" : "int",
-         "universitas" "string",
+         "universitas" : "string",
          "prodi" : "string",
          "nim" : "int",
          "nik" : "int",
