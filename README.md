@@ -73,6 +73,7 @@ Request :
          "kota" : "string"
      }
 }
+```
 
 Response :
 
@@ -145,6 +146,7 @@ Request :
          "lokasi" : "string"
      }
 }
+```
 
 Response :
 
@@ -176,6 +178,7 @@ Request :
          "lokasi" : "string"
      }
 }
+```
 
 Response :
 
