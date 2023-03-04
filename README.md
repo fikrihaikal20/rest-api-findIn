@@ -244,3 +244,238 @@ Response :
 }
 ```
 
+## Profile Student
+
+Request :
+- Method : GET
+- Endpoint : `/api/profileStudent/`
+
+Response :
+
+```json 
+{
+    "message" : " "
+}
+```
+
+## Post Video
+
+Request :
+- Method : POST
+- Endpoint : `/api/postVideo/`
+- Body :
+
+```json 
+{
+    "data" : {
+         "cv" : " ",
+         "resume" : " ",
+     }
+}
+```
+
+Response :
+
+```json 
+{
+    "message" : " "
+}
+```
+
+## View Edit Student
+
+Request :
+- Method : GET
+- Endpoint : `/api/editStudent/`
+
+Response :
+
+```json 
+{
+    "message" : " "
+}
+```
+
+## Edit Student
+
+Request :
+- Method : PUT
+- Endpoint : `/api/editStudent/`
+- Body :
+
+```json 
+{
+    "data" : {
+         "cv" : " ",
+         "resume" : " ",
+     }
+}
+```
+
+Response :
+
+```json 
+{
+    "message" : " "
+}
+```
+
+## Dashboard Student
+
+Request :
+- Method : GET
+- Endpoint : `/api/dashboardStudent/`
+
+Response :
+
+```json 
+{
+    "message" : " "
+}
+```
+## Profile Recruiter
+
+Request :
+- Method : GET
+- Endpoint : `/api/profileRecruiter/`
+
+Response :
+
+```json 
+{
+    "message" : " "
+}
+```
+
+## lowongan
+
+Request :
+- Method : GET
+- Endpoint : `/api/lowongan/`
+
+Response :
+
+```json 
+{
+    "message" : " "
+}
+```
+
+## Delete lowongan
+
+Request :
+- Method : DELETE
+- Endpoint : `/api/lowongan/`
+- Body :
+
+```json 
+{
+    "data" : {
+         "cv" : " ",
+         "resume" : " ",
+     }
+}
+```
+
+Response :
+
+```json 
+{
+    "message" : " "
+}
+```
+
+## Tutup Lowongan
+
+Request :
+- Method : POST
+- Endpoint : `/api/tutupLowongan/`
+- Body :
+
+```json 
+{
+    "data" : {
+         "cv" : " ",
+         "resume" : " ",
+     }
+}
+```
+
+Response :
+
+```json 
+{
+    "message" : " "
+}
+```
+
+
+## View Detail Lowongan
+
+Request :
+- Method : GET
+- Endpoint : `/api/detailLowongan/:id`
+
+Response :
+
+```json 
+{
+    "message" : " "
+}
+```
+
+## View Edit Lowongan
+
+Request :
+- Method : GET
+- Endpoint : `/api/editLowongan/:id`
+
+Response :
+
+```json 
+{
+    "message" : " "
+}
+```
+
+## Edit Lowongan
+
+Request :
+- Method : PUT
+- Endpoint : `/api/editLowongan/:id`
+- Body :
+
+```json 
+{
+    "data" : {
+         "cv" : " ",
+         "resume" : " ",
+     }
+}
+```
+
+Response :
+
+```json 
+{
+    "message" : " "
+}
+```
+
+## View Applier
+
+Request :
+- Method : GET
+- Endpoint : `/api/applier/:id`
+
+Response :
+
+```json 
+{
+    "message" : " "
+}
+```
+
+
+
+
