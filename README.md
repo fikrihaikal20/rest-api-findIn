@@ -254,7 +254,14 @@ Response :
 
 ```json 
 {
-    "message" : " "
+    "nama" : "string",
+    "universitas" : "string",
+    "prodi" : "string",
+    "tahun_masuk" : "date"
+    "expertise" : "string",
+    "skills" : "string",
+    "deskripsi" : "string",
+    
 }
 ```
 
@@ -268,8 +275,7 @@ Request :
 ```json 
 {
     "data" : {
-         "cv" : " ",
-         "resume" : " ",
+         "video" : " ",
      }
 }
 ```
@@ -278,7 +284,7 @@ Response :
 
 ```json 
 {
-    "message" : " "
+    "message" : "Berhasil post video"
 }
 ```
 
@@ -292,7 +298,15 @@ Response :
 
 ```json 
 {
-    "message" : " "
+    "data" : {
+        "nama" : "string",
+        "universitas" : "string",
+        "prodi" : "string",
+        "tahun_masuk" : "date"
+        "expertise" : "string",
+        "skills" : "string",
+        "deskripsi" : "string",
+     }
 }
 ```
 
@@ -305,10 +319,13 @@ Request :
 
 ```json 
 {
-    "data" : {
-         "cv" : " ",
-         "resume" : " ",
-     }
+       "nama" : "string",
+       "universitas" : "string",
+       "prodi" : "string",
+       "tahun_masuk" : "date"
+       "expertise" : "string",
+       "skills" : "string",
+       "deskripsi" : "string",
 }
 ```
 
@@ -316,7 +333,7 @@ Response :
 
 ```json 
 {
-    "message" : " "
+    "message" : "Berhasil melakukan perubahan"
 }
 ```
 
@@ -330,7 +347,11 @@ Response :
 
 ```json 
 {
-    "message" : " "
+    "data" : {
+         "posisi" : "string",
+         "perusahaan" : "string",
+         "status" : "string"
+     }
 }
 ```
 ## Profile Recruiter
@@ -343,7 +364,11 @@ Response :
 
 ```json 
 {
-    "message" : " "
+    "data" : {
+         "nama" : "string",
+         "perusahaan" : "string",
+         "limit" : "int",
+     }
 }
 ```
 
@@ -357,7 +382,11 @@ Response :
 
 ```json 
 {
-    "message" : " "
+    "data" : {
+         "posisi" : "string",
+         "status" : "string",
+         "tenggat" : "date",
+     }
 }
 ```
 
@@ -365,23 +394,13 @@ Response :
 
 Request :
 - Method : DELETE
-- Endpoint : `/api/lowongan/`
-- Body :
-
-```json 
-{
-    "data" : {
-         "cv" : " ",
-         "resume" : " ",
-     }
-}
-```
+- Endpoint : `/api/lowongan/:id`
 
 Response :
 
 ```json 
 {
-    "message" : " "
+    "message" : "Berhasil Delete"
 }
 ```
 
@@ -394,10 +413,7 @@ Request :
 
 ```json 
 {
-    "data" : {
-         "cv" : " ",
-         "resume" : " ",
-     }
+    "status" : " "
 }
 ```
 
@@ -405,7 +421,7 @@ Response :
 
 ```json 
 {
-    "message" : " "
+    "message" : "lowongan ditutup"
 }
 ```
 
@@ -419,8 +435,14 @@ Request :
 Response :
 
 ```json 
-{
-    "message" : " "
+{    
+    
+     "data" : {
+         "posisi" : "string",
+         "perusahaan" : "string",
+         "lokasi" : "string",
+         "deskripsi" : "string"
+     }
 }
 ```
 
@@ -434,7 +456,12 @@ Response :
 
 ```json 
 {
-    "message" : " "
+     "data" : {
+         "posisi" : "string",
+         "perusahaan" : "string",
+         "lokasi" : "string",
+         "deskripsi" : "string"
+     }
 }
 ```
 
@@ -447,10 +474,10 @@ Request :
 
 ```json 
 {
-    "data" : {
-         "cv" : " ",
-         "resume" : " ",
-     }
+     "posisi" : "string",
+     "perusahaan" : "string",
+     "lokasi" : "string",
+     "deskripsi" : "string"
 }
 ```
 
@@ -458,7 +485,7 @@ Response :
 
 ```json 
 {
-    "message" : " "
+    "message" : "Berhasil edit lowongan"
 }
 ```
 
@@ -472,7 +499,11 @@ Response :
 
 ```json 
 {
-    "message" : " "
+    "data" : {
+         "nama" : "string",
+         "expertise" : "string",
+         "no_telp" : "int"
+     }
 }
 ```
 
