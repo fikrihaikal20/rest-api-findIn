@@ -204,7 +204,7 @@ Request :
          "posisi" : "string",
          "perusahaan" : "string",
          "lokasi" : "string",
-         "tipe" : "string,
+         "tipe" : "string",
          "deskripsi" : "string",
          "tenggat" : "date",
          "panduan" : "string",
