@@ -12,7 +12,7 @@ Request :
 {
     "data" : {
          "email" : "string",
-         "passwaord" : "string",
+         "password" : "string",
          "nama" : "string",
          "no_telp" : "int",
          "universitas" : "string",
