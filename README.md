@@ -19,7 +19,7 @@ Request :
          "prodi" : "string",
          "nim" : "int",
          "nik" : "int",
-         "tahun masuk" : "date",
+         "tahun_masuk" : "date",
          "expertise" : "string",
          "skills" : "string",
      }
@@ -38,7 +38,7 @@ Request :
 {
     "data" : {
          "email" : "string",
-         "passwaord" : "string",
+         "password" : "string",
          "username" : "string",
      }
 }
@@ -82,7 +82,7 @@ Response :
          "expertise" : "string",
          "skills" : "string",
          "deskripsi" : "string",
-         "video" : 
+         "video" : "string"
      }
 }
 ```
@@ -134,7 +134,7 @@ Response :
          "posisi" : "string",
          "perusahaan" : "string",
          "lokasi" : "string",
-         "tipe" : "part time | full time",
+         "tipe" : "string",
      }
 }
 ```
@@ -154,7 +154,7 @@ Response :
          "perusahaan" : "string",
          "lokasi" : "string",
          "deskripsi" : "string",
-         "tipe" : "part time | full time",
+         "tipe" : "string",
      }
 }
 ```
@@ -169,7 +169,7 @@ Request :
 ```json 
 {
     "data" : {
-         "tipe" : "part time | full time",
+         "tipe" : "string",
          "skills" : "string",
          "expertise" : "string",
          "lokasi" : "string"
@@ -186,7 +186,7 @@ Response :
          "posisi" : "string",
          "perusahaan" : "string",
          "lokasi" : "string",
-         "tipe" : "part time | full time",
+         "tipe" : "string",
      }
 }
 ```
@@ -204,10 +204,10 @@ Request :
          "posisi" : "string",
          "perusahaan" : "string",
          "lokasi" : "string",
-         "tipe" : "part time | full time",
+         "tipe" : "string,
          "deskripsi" : "string",
          "tenggat" : "date",
-         "panduan" : " ",
+         "panduan" : "string",
      }
 }
 ```
@@ -216,7 +216,7 @@ Response :
 
 ```json 
 {
-    "message" : " "
+    "message" : "Berhasil post lowongan"
 }
 ```
 
@@ -230,8 +230,8 @@ Request :
 ```json 
 {
     "data" : {
-         "cv" : " ",
-         "resume" : " ",
+         "cv" : "string",
+         "resume" : "string",
      }
 }
 ```
@@ -240,7 +240,7 @@ Response :
 
 ```json 
 {
-    "message" : " "
+    "message" : "Berhasil apply intern"
 }
 ```
 
@@ -275,7 +275,7 @@ Request :
 ```json 
 {
     "data" : {
-         "video" : " ",
+         "video" : "string",
      }
 }
 ```
@@ -413,7 +413,7 @@ Request :
 
 ```json 
 {
-    "status" : " "
+    "status" : "string"
 }
 ```
 
